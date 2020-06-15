@@ -8,6 +8,6 @@ class Artist
   end 
   
   def all(artist)
-    @@all 
+    Artist.all
   end 
 end 
