@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist
 
@@ -18,4 +19,6 @@ class Song
     self.artist = artist
     artist.add_song(self)
   end
+  
+  binding.pry 
 end
