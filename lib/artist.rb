@@ -4,19 +4,25 @@ class Artist
   @@all= []
 
   
-  def initialize (name, artist=nil)
+  def initialize (name)
     @name= name 
-    @artist=artist 
+    @songs = []
+  end 
+  
+  # def self.all 
+  #   @@all 
+  # end 
+  
+  def add_song(song)
+    @songs<< song
+  end 
+  
+  def save 
     @@all << self 
-    @@songs << self 
   end 
   
   def self.all 
     @@all 
-  end 
-  
-  def add_song(song)
-    @songs<< song
   end 
   
 end 
