@@ -20,5 +20,8 @@ class Song
     artist.add_song(self)
   end
   
-  binding.pry 
+  def all(song)
+    Song.all
+  binding.pry
+  end 
 end
