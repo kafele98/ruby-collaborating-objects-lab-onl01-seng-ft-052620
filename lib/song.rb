@@ -20,7 +20,4 @@ class Song
     artist.add_song(self)
   end
   
-  def self.all 
-    Song.all.return 
-  end 
 end
