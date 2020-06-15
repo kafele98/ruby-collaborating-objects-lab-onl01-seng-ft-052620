@@ -7,7 +7,7 @@ class Artist
     @name= name 
   end 
   
-  def all(artist)
-    Artist.all
+  def self.all 
+    @@all 
   end 
 end 
